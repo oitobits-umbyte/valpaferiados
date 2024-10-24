@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feriados Municipais em Valparaíso/SP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h2>Calendário de Feriados Municipais em Valparaíso/SP</h2>
+    <h3>Selecione o Ano</h3>
+    <div class="year-selection">
+        <button onclick="changeYear(-1)">-</button>
+        <input type="number" id="yearInput" value="2024" onchange="updateCalendars()" />
+        <button onclick="changeYear(1)">+</button>
+    </div>
+    <div class="calendars">
+        <div id="mayCalendar" class="calendar">
+            <h2>Maio</h2>
+            <table>
+                <tr>
+                    <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th>
+                    <th>Qui</th><th>Sex</th><th>Sáb</th>
+                </tr>
+                <tbody id="mayBody"></tbody>
+            </table>
+        </div>
+        <div id="augustCalendar" class="calendar">
+            <h2>Agosto</h2>
+            <table>
+                <tr>
+                    <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th>
+                    <th>Qui</th><th>Sex</th><th>Sáb</th>
+                </tr>
+                <tbody id="augustBody"></tbody>
+            </table>
+        </div>
+    </div>
+	<div id="holidayInfo" class="holiday-info"></div>
+	<p>SEXTA-FEIRA DA PAIXÃO – FERIADO MÓVEL</p>
+	<p>Fonte: <a href="https://www.valparaiso.sp.gov.br/portal/servicos/1002/feriados-municipais/" target="_blank">Prefeitura Municipal de Valparaíso</a></p>
+    <script src="script.js"></script>
+</body>
+</html>
